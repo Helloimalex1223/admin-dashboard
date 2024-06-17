@@ -23,12 +23,44 @@ html, body
     background-color: #79aea3;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .heading
 {
     grid-area: heading;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
+
+.topInfo
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topInfo img
+{
+    width: 40px;
+}
+
+.bottomInfo
+{
+    display: flex;
+}
+
+.heading .searchBar
+{
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 50px;
+}
+
 
 .projects
 {
