@@ -1,0 +1,47 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+.gridContainer
+{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 10fr 1fr 1fr;
+    grid-template-areas: "sidebar heading heading heading"
+                         "sidebar projects projects announcements"
+                         "sidebar projects projects annoucements"
+                         "sidebar projects projects trending"
+                         "sidebar projects projects trending";
+}
+
+.sidebar
+{
+    grid-area: sidebar;
+    background-color: #79aea3;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading
+{
+    grid-area: heading;
+}
+
+.projects
+{
+    grid-area: projects;
+}
+
+.announcements
+{
+    grid-area: announcements;
+}
+
+.trending
+{
+    grid-area: trending;
+}
+
