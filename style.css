@@ -8,9 +8,10 @@ html, body
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 5fr 10fr 1fr 1fr;
     grid-template-areas: "sidebar heading heading heading"
+                         "sidebar projects projects announcements"
                          "sidebar projects projects announcements"
                          "sidebar projects projects annoucements"
                          "sidebar projects projects trending"
@@ -32,6 +33,7 @@ html, body
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    gap: 1rem;
 }
 
 .topInfo
@@ -40,17 +42,59 @@ html, body
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 4rem;
 }
 
 .topInfo img
 {
     width: 40px;
+    height: auto;
+}
+
+.topLeft
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.topRight
+{
+    display: flex;
+    gap: 1rem;
 }
 
 .bottomInfo
 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons
+{
+    display: flex;
+    gap: .5rem;
+}
+
+.buttons button
+{
+    padding: .75rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #79aea3;
+    font-weight: bold;
+    color: white;
+}
+
+.user
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.user img
+{
+    width: 50px;
 }
 
 .heading .searchBar
@@ -58,7 +102,7 @@ html, body
     width: 500px;
     border: 1px solid black;
     border-radius: 1rem;
-    height: 50px;
+    height: 30px;
 }
 
 
